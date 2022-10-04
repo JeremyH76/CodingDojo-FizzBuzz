@@ -61,6 +61,8 @@ namespace TestProject
             Assert.Equal("Buzz", FizzBuzz2.Of(40));
             Assert.Equal("12467", FizzBuzz2.Of(12467));
             Assert.Equal("FizzBuzz", FizzBuzz2.Of(1234567));
+            Assert.Equal("FizzFizzFizzFizzFizzFizzFizzFizz", FizzBuzz2.Of(3333333));
+            Assert.Equal("BuzzBuzzBuzzBuzzBuzzBuzzBuzzBuzz", FizzBuzz2.Of(5555555));
         }
 
     }
