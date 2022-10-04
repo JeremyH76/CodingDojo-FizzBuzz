@@ -17,7 +17,9 @@ namespace CodingDojo_FizzBuzz
         {
             string ret = "";
             if (i % 3 == 0) { ret += "Fizz"; }
+            foreach (char c in i.ToString()) { if (c == '3') { ret += "Fizz"; } }
             if (i % 5 == 0) { ret += "Buzz"; }
+            foreach (char c in i.ToString()) { if (c == '5') { ret += "Buzz"; } }
             if (ret == "") { ret = i.ToString(); }
             return ret;
         }

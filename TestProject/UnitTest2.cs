@@ -14,9 +14,9 @@ namespace TestProject
         {
             Assert.Equal("1", FizzBuzz2.Next(0));
             Assert.Equal("2", FizzBuzz2.Next(1));
-            Assert.Equal("Fizz", FizzBuzz2.Next(2));
+            Assert.Equal("FizzFizz", FizzBuzz2.Next(2));
             Assert.Equal("4", FizzBuzz2.Next(3));
-            Assert.Equal("Buzz", FizzBuzz2.Next(4));
+            Assert.Equal("BuzzBuzz", FizzBuzz2.Next(4));
             Assert.Equal("Fizz", FizzBuzz2.Next(5));
             Assert.Equal("7", FizzBuzz2.Next(6));
             Assert.Equal("8", FizzBuzz2.Next(7));
@@ -26,7 +26,7 @@ namespace TestProject
             Assert.Equal("Fizz", FizzBuzz2.Next(11));
             Assert.Equal("Fizz", FizzBuzz2.Next(12));
             Assert.Equal("14", FizzBuzz2.Next(13));
-            Assert.Equal("FizzBuzz", FizzBuzz2.Next(14));
+            Assert.Equal("FizzBuzzBuzz", FizzBuzz2.Next(14));
             Assert.Equal("16", FizzBuzz2.Next(15));
             Assert.Equal("17", FizzBuzz2.Next(16));
             Assert.Equal("Fizz", FizzBuzz2.Next(17));
