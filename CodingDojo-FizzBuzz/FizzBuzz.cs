@@ -12,5 +12,10 @@ namespace CodingDojo_FizzBuzz
         {
             return "";
         }
+
+        public static string Of(int i)
+        {
+            return "";
+        }
     }
 }

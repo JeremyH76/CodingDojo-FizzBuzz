@@ -29,5 +29,15 @@ namespace TestProject
             Assert.Equal("Buzz",FizzBuzz.Next(19));
             Assert.Equal("Fizz",FizzBuzz.Next(20));
         }
+
+        [Fact]
+        public void TestBigNumber()
+        {
+            Assert.Equal("FizzBuzz", FizzBuzz.Of(300));
+            Assert.Equal("FizzBuzz", FizzBuzz.Of(300000000));
+            Assert.Equal("Fizz", FizzBuzz.Of(300000003));
+            Assert.Equal("300000004", FizzBuzz.Of(300000004));
+            Assert.Equal("Buzz", FizzBuzz.Of(300000005));
+        }
     }
 }
