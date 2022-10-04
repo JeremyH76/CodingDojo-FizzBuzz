@@ -10,12 +10,16 @@ namespace CodingDojo_FizzBuzz
     {
         public static string Next(int i)
         {
-            return "";
+            return Of(i+1);
         }
 
         public static string Of(int i)
         {
-            return "";
+            string ret = "";
+            if (i % 3 == 0) { ret += "Fizz"; }
+            if (i % 5 == 0) { ret += "Buzz"; }
+            if (ret=="") { ret = i.ToString(); }
+            return ret;
         }
     }
 }
