@@ -45,5 +45,23 @@ namespace TestProject
             Assert.Equal("FizzBuzzBuzz", FizzBuzz2.Of(300000005));
         }
 
+        [Fact]
+        public void TestStage2()
+        {
+            Assert.Equal("FizzFizzBuzz", FizzBuzz2.Of(30));
+            Assert.Equal("Fizz", FizzBuzz2.Of(31));
+            Assert.Equal("Fizz", FizzBuzz2.Of(32));
+            Assert.Equal("FizzFizzFizz", FizzBuzz2.Of(33));
+            Assert.Equal("Fizz", FizzBuzz2.Of(34));
+            Assert.Equal("FizzBuzzBuzz", FizzBuzz2.Of(35));
+            Assert.Equal("FizzFizz", FizzBuzz2.Of(36));
+            Assert.Equal("Fizz", FizzBuzz2.Of(37));
+            Assert.Equal("Fizz", FizzBuzz2.Of(38));
+            Assert.Equal("FizzFizz", FizzBuzz2.Of(39));
+            Assert.Equal("Buzz", FizzBuzz2.Of(40));
+            Assert.Equal("12467", FizzBuzz2.Of(12467));
+            Assert.Equal("FizzBuzz", FizzBuzz2.Of(1234567));
+        }
+
     }
 }
