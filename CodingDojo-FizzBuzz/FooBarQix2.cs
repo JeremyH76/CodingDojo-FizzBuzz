@@ -19,6 +19,16 @@ namespace CodingDojo_FizzBuzz
                 if (c == '3') { ret += "Foo"; }
                 if (c == '5') { ret += "Bar"; }
                 if (c == '7') { ret += "Qix"; }
+                if (c == '0') { ret += "*"; }
+            }
+            if (ret.All(c => c == '*'))
+            {
+                ret = "";
+                foreach (char c in i.ToString())
+                {
+                    if (c == '0') { ret += "*"; }
+                    else { ret += c; }
+                }
             }
             if (ret == "") { ret = i.ToString(); }
             return ret;
